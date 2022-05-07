@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+}
+
+
+header{
+    width: 100%;
+    background-color:#272A2B;
+    position: fixed;
+    width:100%;
+    padding:10px 0;
+    z-index: 2;
+}
+
+#btn-menu{
+display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    border-right: solid 1px #F02A1E;
+}
+
+header label:hover{
+    cursor:pointer;
+    background-color: rgba(0, 0,0, 0.3);
+}
+
+/*nav{
+    background-color:#272A2B;
+    position:fixed;
+    width:100%;
+    padding:10px 0;
+}*/
+
+nav ul{
+    display:flex;
+    justify-content:flex-end;
+    margin:0;
+    padding:0;
+   
+}
+
+nav li{
+    
+   margin-right:30px;
+   border-right: solid #F02A1E 1px;
+ 
+}
+
+nav li a{
+    display:block;
+    text-decoration:none;
+    color:#F02A1E;
+    float:right;
+    font-size:20px;
+    font-weight:bold;
+    padding:20px 20px;
+}
+
+nav ul li{
+    display:inline-block;
+  transition: all .2s ease;
+  
+}
+
+
+nav ul li:hover{
+    transform:scale(1.0259);
+  }
+
+  nav li:hover{
+      
+      margin-top: 0;
+  }
+
+#welcome{
+    padding-top: 90px;
+    background-color: rgb(189, 50, 78);
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#base{
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: darkred;
+}
+
+#title{
+    text-align: center;
+    color:white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+#about{
+    margin: 0;
+    background-image:url(https://factorcapitalhumano.com/wp-content/uploads/2020/03/programadores-profesionistas-con-incrementos-salariales-constantes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 600px;
+   /* filter:brightness(0.8);*/
+    /*cambiar el contraste/luminosidad de la imagen.
+     Si pones una luminosidad entre 0 y 1 la imagen se verá más oscura.*/
+     
+}
+
+#about:before{
+    content:"";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color:rgba(74, 190, 178,0.5);
+    
+}
+
+#lista,#subtema1{
+    position: relative;
+}
+
+#lista{
+    background-color: rgba(51, 99, 187, 0.836);
+    width: 290px;
+    border-radius: 25px;
+    padding: 10px;
+    color:blanchedalmond;
+}
+
+#lista ul{
+    margin-bottom: 10px;
+}
+
+#educacion{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+height: 100vh;
+align-items:center;
+background-color:darkcyan;
+color: white;
+}
+
+#cursos{
+    width: 400px;
+    max-height: 200px;
+    border-radius: 20px ;
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(102, 95, 145, 0.534);
+}
+
+
+#cursos p{
+    padding-bottom: 10px;
+}
+
+#cursos li{
+    padding-bottom: 5px;
+}
+
+#escuela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    width: 400px;
+    max-height: 200px;
+    border-radius: 20px;
+    text-align: justify;
+  padding: 20px 10px;
+  background-color: rgba(102, 95, 145, 0.534);
+}
+
+#logo-umsnh{
+    width:150px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.negritalista{
+font-weight: bold;
+}
+
+#subtema1{
+    text-align: center;
+    color: blanchedalmond;
+    background-color: rgba(105, 105, 105, 0.801);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+#perfil{
+    border-radius:100%;
+
+}
+
+
+#contactame{
+    background-color: rgb(59, 55, 55);
+    width: 100%;
+    border-bottom: solid white 3px;
+    padding-bottom: 20px;
+ 
+}
+#contactamed{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#contactame #contact{ 
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(73, 68, 68, 0.589);;
+    
+}
+
+
+.redes{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    transition: transform .3s;
+    text-align: center;
+  
+}
+
+
+.redes:hover{
+    transform: scale(1.15);
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer{
+background-color: black;
+color: white;
+text-align: center;
+padding: 10px;
+position: relative;
+
+}
+
+
+footer p{
+   padding-top: 30px;
+}
+
+
+  @media(max-width:800px){
+      header label{
+          display: block;
+      }
+
+      nav{
+          position:absolute;
+          background-color:#272A2B;
+          width:60%;
+          margin-left: -70%;
+          transition: all 0.5s;
+      }
+
+      nav ul{
+          flex-direction: column;
+      }
+
+      nav li{
+          border-top: solid #F02A1E 1px;
+          border-right: none;
+          margin-right: 1px;
+        transition: 0s;
+      }
+
+
+      #btn-menu:checked ~ nav{
+          margin:0;
+      }
+    
+     
+      #base{
+        font-size: 15px;
+    }
+    
+    #perfil{
+width: 150px;
+    }
+
+    #title{
+        font-size: 18px;
+    }
+
+      #educacion{
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+        }
+
+
+        #escuela{
+            width: 250px;
+            min-height: 250px;
+        }
+
+        #cursos{
+            width: 250px;
+            min-height: 300px;
+        }
+  }
